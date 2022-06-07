@@ -35,7 +35,7 @@ void sort(std::vector<int>& arr)
     }
 }
  
-void printArray(std::vector<int>& arr)
+void print(std::vector<int>& arr)
 {
     for (int i = 0; i < arr.size(); i++){
        std::cout << arr[i] << " ";

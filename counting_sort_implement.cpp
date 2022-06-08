@@ -34,6 +34,7 @@ void Counting_Sort_arr(int *array, int size) {
     array[i] = output[i];
   }
 }
+
 void Print_Sort_arr(int *array, int size ) {
   std::cout << "Sorted array: ";
   for (int i = 0; i < size; ++i){

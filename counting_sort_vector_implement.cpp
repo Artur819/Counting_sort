@@ -2,21 +2,18 @@
 #include <vector>
 #include <algorithm>
 void Sort(std::vector<int>& arr);
-void print(std::vector<int>& arr); 
-
+void Print(std::vector<int>& arr); 
 int main()
 {
    std::vector<int> arr = { -5, -10, 0, -3, 8, 5, -1, 10 };
     Sort(arr);
-    print(arr);
+    Print(arr);
     return 0;
 }
-
-void sort(std::vector<int>& arr)
+void Sort(std::vector<int>& arr)
 {
     int max = *max_element(arr.begin(), arr.end());
     int min = *min_element(arr.begin(), arr.end());
-    
     int range = max - min + 1;
     std::vector<int> count(range);
     std::vector<int> output(arr.size());
@@ -34,8 +31,7 @@ void sort(std::vector<int>& arr)
         arr[i] = output[i];
     }
 }
- 
-void print(std::vector<int>& arr)
+void Print(std::vector<int>& arr)
 {
     for (int i = 0; i < arr.size(); i++){
        std::cout << arr[i] << " ";

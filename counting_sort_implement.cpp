@@ -1,7 +1,7 @@
 #include <iostream>
 
-void Counting_Sort_arr(int *array, int size);
-void Print_Sort_arr(int *array, int size );
+void Counting_Sort_arr (int *array, int size);
+void Print_Sort_arr (int *array, int size);
 int main() {
   int array[] = {136,9,124,2,0,13,20,4,4,6,1,0};
   int n = sizeof(array) / sizeof(array[0]);

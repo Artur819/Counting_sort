@@ -9,13 +9,13 @@ int main() {
   Print_Sort_arr( array, n);
 }
 void Counting_Sort_arr (int *array, int size) {
-  int output[size+1];
+  int output[size + 1];
   int max_elem = array[0];
   int min_elem = array[0];
   for (int i = 1; i < size; ++i) {
     if (array[i] > max_elem)
       max_elem = array[i];
-    if (array[i]<min_elem){
+    if (array[i] < min_elem){
       min_elem = array[i];  
     }    
   }

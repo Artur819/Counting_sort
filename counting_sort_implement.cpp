@@ -33,6 +33,7 @@ void Counting_Sort_arr (int *array, int size) {
   for (int i = 0; i < size; ++i) {
     array[i] = output[i];
   }
+  
   delete [] new_arr;
 }
 void Print_Sort_arr (int *array, int size ) {

@@ -1,9 +1,12 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+
 void Sort(std::vector<int>& arr);
 void Print(std::vector<int>& arr); 
+
 int main()
+
 {
     std::vector<int> arr = { -5, -10, 0, -3, 8, 5, -1, 10 };
     Sort(arr);

@@ -1,5 +1,4 @@
 #include <iostream>
-
 void Counting_Sort_arr (int *array, int size);
 void Print_Sort_arr (int *array, int size);
 int main() {
@@ -13,9 +12,10 @@ void Counting_Sort_arr (int *arr, int size) {
   int max = arr[0];
   int min = arr[0];
   for (int i = 1; i < size; ++i) {
-    if (arr[i] > max)
+    if (arr[i] > max) { 
       max = arr[i];
-    if (arr[i] < min){
+    }
+    if (arr[i] < min) {
       min = arr[i];  
     }    
   }

@@ -1,6 +1,8 @@
 #include <iostream>
+
 void Counting_Sort_arr (int *array, int size);
 void Print_Sort_arr (int *array, int size);
+
 int main() {
   int array[] = { -136, 10, -9, 124, 0, 2, -9, -8, 3, 20, 4, 8, 4, -9, 6, 1, 7, 0};
   int n = sizeof(array) / sizeof(array[0]);

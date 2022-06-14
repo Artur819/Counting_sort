@@ -9,7 +9,7 @@ int main() {
   Print_Sort_arr ( array, n);
 }
 void Counting_Sort_arr (int *arr, int size) {
-  int output[size];
+  int * output = new int [size];
   int max = arr[0];
   int min = arr[0];
   for (int i = 1; i < size; ++i) {
@@ -34,6 +34,10 @@ void Counting_Sort_arr (int *arr, int size) {
   for (int i = 0; i < size; i++) {
     arr[i] = output[i];
   }
+  delete [] output;
+  output = nullptr;
+  delete [] count;
+  count = nullptr;
 }
 void Print_Sort_arr (int *array, int size) {
   std::cout << "Sorted array : ";
